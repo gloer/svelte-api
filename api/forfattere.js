@@ -18,7 +18,7 @@ f.onSnapshot(snap => {
     
     module.exports = (req, res) => {
         const { name = 'World' } = req.query
-        res.status(200).send(json)
+        res.status(200).send(JSON.stringify(json))
     }
 
 })
