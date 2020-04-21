@@ -8,7 +8,16 @@ f.onSnapshot(snap => {
     console.log(forfattere)
 })
 
-module.exports = (req, res) => {
-    const { name = 'World' } = req.query
-    res.status(200).send(`HEI ${name}`)
+
+const createApi = async () => {
+
+    module.exports = (req, res) => {
+        const { name = 'World' } = req.query
+        res.status(200).send(`HEI ${name}`)
+    }
+
 }
+
+createApi()
+
+
