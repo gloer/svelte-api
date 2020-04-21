@@ -6,9 +6,11 @@ let f = db.collection("forfattere")
 
 
 
-const createApi = async () => {
+const createApi = () => {
 
-    req.status(100).send("Venter på data");
+    module.exports = (req, res) => {        
+        res.status(100).send(`VENTER`)
+    }
 
     f.onSnapshot(snap => {
         forfattere = snap.docs
