@@ -9,7 +9,7 @@
 	})
 
 </script>
-<h1>Hallo</h1>
+<h1>Hallo der</h1>
 <main>
 	<ul>
 		{#each forfattere as forfatter}
