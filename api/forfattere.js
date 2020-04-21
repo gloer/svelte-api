@@ -5,16 +5,7 @@ let f = db.collection("forfattere")
 
 f.onSnapshot(snap => {
     forfattere = snap.docs
-
-
-    const json = `
-        {
-            "results" : [
-                {"navn" : "PER"},
-                {"navn" : "HARRY"}
-            ]
-        }
-    `
+    console.log(forfattere)
     
     module.exports = (req, res) => {
         const { name = 'World' } = req.query
